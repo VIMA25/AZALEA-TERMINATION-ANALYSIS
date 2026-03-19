@@ -1,157 +1,155 @@
-import React from 'react';
-import { 
-  DollarSign, 
-  Clock, 
-  CheckCircle,
-  Scale,
-  ShieldCheck,
-  FileCheck,
-  Lock,
-  Users,
-  MapPin,
-  Banknote,
-  ShieldAlert
-} from 'lucide-react';
-
-export default function App() {
-  return (
-    <div className="min-h-screen bg-slate-50 p-4 md:p-8 font-sans">
-      <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Contract Summary</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-slate-50 p-4 md:p-8 font-sans">
+    <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
         
-        {/* Header Section */}
-        <div className="bg-slate-800 text-white p-6 md:p-8">
-          <div className="flex items-center justify-between mb-2">
-            <h1 className="text-2xl md:text-3xl font-bold flex items-center gap-3">
-              <Scale className="w-8 h-8 text-emerald-400" />
-              Executive Contract Summary
-            </h1>
-            <span className="bg-emerald-500/20 text-emerald-200 px-3 py-1 rounded-full text-sm font-medium border border-emerald-400/30 flex items-center gap-1">
-              <CheckCircle className="w-4 h-4" /> Final Clearance
-            </span>
-          </div>
-          <p className="text-slate-300 text-sm md:text-base">
-            Mutual Agreement and Release vs. Azalea Health Innovations, Inc.
-          </p>
+        <!-- Header Section -->
+        <div class="bg-slate-800 text-white p-6 md:p-8">
+            <div class="flex items-center justify-between mb-2">
+                <h1 class="text-2xl md:text-3xl font-bold flex items-center gap-3">
+                    <i data-lucide="scale" class="w-8 h-8 text-emerald-400"></i>
+                    Executive Contract Summary
+                </h1>
+                <span class="bg-emerald-500/20 text-emerald-200 px-3 py-1 rounded-full text-sm font-medium border border-emerald-400/30 flex items-center gap-1">
+                    <i data-lucide="check-circle" class="w-4 h-4"></i> Final Clearance
+                </span>
+            </div>
+            <p class="text-slate-300 text-sm md:text-base">
+                Mutual Agreement and Release vs. Azalea Health Innovations, Inc.
+            </p>
         </div>
 
-        {/* Top KPI Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x border-b border-slate-200">
-          
-          {/* Risk Level */}
-          <div className="p-6 bg-emerald-50/50">
-            <div className="flex items-center gap-3 mb-2">
-              <div className="p-2 bg-emerald-100 rounded-lg text-emerald-600">
-                <ShieldCheck className="w-6 h-6" />
-              </div>
-              <h2 className="text-lg font-semibold text-slate-800">Risk Level</h2>
-            </div>
-            <p className="text-2xl font-bold text-emerald-600 mb-1">Very Low</p>
-            <p className="text-sm text-slate-600">MSA reviewed. No hidden financial traps or restrictive covenants.</p>
-          </div>
-
-          {/* Financial Exposure */}
-          <div className="p-6 bg-emerald-50/50">
-            <div className="flex items-center gap-3 mb-2">
-              <div className="p-2 bg-emerald-100 rounded-lg text-emerald-600">
-                <Banknote className="w-6 h-6" />
-              </div>
-              <h2 className="text-lg font-semibold text-slate-800">Financials</h2>
-            </div>
-            <p className="text-2xl font-bold text-emerald-600 mb-1">$20,000</p>
-            <p className="text-sm text-slate-600">Flat payment writing off a <strong>$246,186.33</strong> corporate debt.</p>
-          </div>
-
-          {/* Timeline */}
-          <div className="p-6 bg-indigo-50/50">
-            <div className="flex items-center gap-3 mb-2">
-              <div className="p-2 bg-indigo-100 rounded-lg text-indigo-600">
-                <Clock className="w-6 h-6" />
-              </div>
-              <h2 className="text-lg font-semibold text-slate-800">Timeline</h2>
-            </div>
-            <p className="text-xl font-bold text-indigo-600 mb-1">Mar 31, 2026</p>
-            <p className="text-sm text-slate-600">Strict deadline to wire funds to Credit Mediators Inc.</p>
-          </div>
-
-        </div>
-
-        {/* MSA Review Section */}
-        <div className="p-6 md:p-8 bg-slate-50">
-          <div className="flex items-center gap-3 mb-6">
-            <FileCheck className="w-7 h-7 text-blue-600" />
-            <h2 className="text-xl font-bold text-slate-800">
-              MSA Audit: The "Surviving" Clauses Explained
-            </h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Top KPI Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x border-b border-slate-200">
             
-            {/* Sec 2 */}
-            <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex gap-3">
-              <Lock className="w-6 h-6 text-slate-400 shrink-0 mt-0.5" />
-              <div>
-                <h3 className="font-bold text-slate-800 text-sm mb-1">Confidentiality (Sec 2)</h3>
-                <p className="text-sm text-slate-600">Clinic cannot share Azalea's software secrets, screenshots, or pricing structure with third parties for 5 years.</p>
-              </div>
+            <!-- Risk Level -->
+            <div class="p-6 bg-emerald-50/50">
+                <div class="flex items-center gap-3 mb-2">
+                    <div class="p-2 bg-emerald-100 rounded-lg text-emerald-600">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <h2 class="text-lg font-semibold text-slate-800">Risk Level</h2>
+                </div>
+                <p class="text-2xl font-bold text-emerald-600 mb-1">Very Low</p>
+                <p class="text-sm text-slate-600">MSA reviewed. No hidden financial traps or restrictive covenants.</p>
             </div>
 
-            {/* Sec 3 & 4 */}
-            <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex gap-3">
-              <ShieldCheck className="w-6 h-6 text-slate-400 shrink-0 mt-0.5" />
-              <div>
-                <h3 className="font-bold text-slate-800 text-sm mb-1">HIPAA & Data (Sec 3 & 4)</h3>
-                <p className="text-sm text-slate-600">Standard privacy boilerplate. <strong>Status: Moot.</strong> Since Azalea never accessed your patient data, this poses zero risk.</p>
-              </div>
+            <!-- Financial Exposure -->
+            <div class="p-6 bg-emerald-50/50">
+                <div class="flex items-center gap-3 mb-2">
+                    <div class="p-2 bg-emerald-100 rounded-lg text-emerald-600">
+                        <i data-lucide="banknote" class="w-6 h-6"></i>
+                    </div>
+                    <h2 class="text-lg font-semibold text-slate-800">Financials</h2>
+                </div>
+                <p class="text-2xl font-bold text-emerald-600 mb-1">$20,000</p>
+                <p class="text-sm text-slate-600">Flat payment writing off a <strong>$246,186.33</strong> corporate debt.</p>
             </div>
 
-            {/* Sec 7 */}
-            <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex gap-3">
-              <Users className="w-6 h-6 text-slate-400 shrink-0 mt-0.5" />
-              <div>
-                <h3 className="font-bold text-slate-800 text-sm mb-1">Non-Solicitation (Sec 7)</h3>
-                <p className="text-sm text-slate-600">For 1 year, you cannot hire any of Azalea's IT staff or contractors. Penalty for doing so is 75% of the employee's salary.</p>
-              </div>
+            <!-- Timeline -->
+            <div class="p-6 bg-indigo-50/50">
+                <div class="flex items-center gap-3 mb-2">
+                    <div class="p-2 bg-indigo-100 rounded-lg text-indigo-600">
+                        <i data-lucide="clock" class="w-6 h-6"></i>
+                    </div>
+                    <h2 class="text-lg font-semibold text-slate-800">Timeline</h2>
+                </div>
+                <p class="text-xl font-bold text-indigo-600 mb-1">Mar 31, 2026</p>
+                <p class="text-sm text-slate-600">Strict deadline to wire funds to Credit Mediators Inc.</p>
             </div>
 
-            {/* Sec 15 */}
-            <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex gap-3">
-              <ShieldAlert className="w-6 h-6 text-slate-400 shrink-0 mt-0.5" />
-              <div>
-                <h3 className="font-bold text-slate-800 text-sm mb-1">Indemnification (Sec 15)</h3>
-                <p className="text-sm text-slate-600">Standard vendor protection: If your clinic does something illegal that causes Azalea to be sued, you pay their legal bills.</p>
-              </div>
-            </div>
-
-            {/* Sec 19 */}
-            <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex gap-3 md:col-span-2">
-              <MapPin className="w-6 h-6 text-slate-400 shrink-0 mt-0.5" />
-              <div>
-                <h3 className="font-bold text-slate-800 text-sm mb-1">Jurisdiction & Venue (Sec 19)</h3>
-                <p className="text-sm text-slate-600">If there is ever a legal dispute in the future, it must be handled in Delaware courts, and both parties waive the right to a jury trial.</p>
-              </div>
-            </div>
-
-          </div>
         </div>
 
-        {/* Recommendation Section */}
-        <div className="bg-slate-50 p-6 md:p-8 border-t border-slate-200">
-          <div className="flex flex-col md:flex-row items-center justify-between bg-white p-6 rounded-xl border-2 border-emerald-100 shadow-sm gap-6">
-            <div className="flex items-center gap-4">
-              <div className="p-3 bg-emerald-100 rounded-full text-emerald-600 shrink-0">
-                <CheckCircle className="w-8 h-8" />
-              </div>
-              <div>
-                <h2 className="text-lg font-bold text-slate-800 mb-1">Final Legal Recommendation</h2>
-                <p className="text-slate-600 text-sm">
-                  <strong>Clear to Sign.</strong> The hidden clauses have been audited and pose no unusual risk or financial burden to Procreate Fertility. Execute the settlement and process the $20,000 wire transfer to close this matter entirely.
-                </p>
-              </div>
+        <!-- MSA Review Section -->
+        <div class="p-6 md:p-8 bg-slate-50">
+            <div class="flex items-center gap-3 mb-6">
+                <i data-lucide="file-check" class="w-7 h-7 text-blue-600"></i>
+                <h2 class="text-xl font-bold text-slate-800">
+                    MSA Audit: The "Surviving" Clauses Explained
+                </h2>
             </div>
-          </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                <!-- Sec 2 -->
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex gap-3">
+                    <i data-lucide="lock" class="w-6 h-6 text-slate-400 shrink-0 mt-0.5"></i>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-sm mb-1">Confidentiality (Sec 2)</h3>
+                        <p class="text-sm text-slate-600">Clinic cannot share Azalea's software secrets, screenshots, or pricing structure with third parties for 5 years.</p>
+                    </div>
+                </div>
+
+                <!-- Sec 3 & 4 -->
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex gap-3">
+                    <i data-lucide="shield-check" class="w-6 h-6 text-slate-400 shrink-0 mt-0.5"></i>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-sm mb-1">HIPAA & Data (Sec 3 & 4)</h3>
+                        <p class="text-sm text-slate-600">Standard privacy boilerplate. <strong>Status: Moot.</strong> Since Azalea never accessed your patient data, this poses zero risk.</p>
+                    </div>
+                </div>
+
+                <!-- Sec 7 -->
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex gap-3">
+                    <i data-lucide="users" class="w-6 h-6 text-slate-400 shrink-0 mt-0.5"></i>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-sm mb-1">Non-Solicitation (Sec 7)</h3>
+                        <p class="text-sm text-slate-600">For 1 year, you cannot hire any of Azalea's IT staff or contractors. Penalty for doing so is 75% of the employee's salary.</p>
+                    </div>
+                </div>
+
+                <!-- Sec 15 -->
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex gap-3">
+                    <i data-lucide="shield-alert" class="w-6 h-6 text-slate-400 shrink-0 mt-0.5"></i>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-sm mb-1">Indemnification (Sec 15)</h3>
+                        <p class="text-sm text-slate-600">Standard vendor protection: If your clinic does something illegal that causes Azalea to be sued, you pay their legal bills.</p>
+                    </div>
+                </div>
+
+                <!-- Sec 19 -->
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex gap-3 md:col-span-2">
+                    <i data-lucide="map-pin" class="w-6 h-6 text-slate-400 shrink-0 mt-0.5"></i>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-sm mb-1">Jurisdiction & Venue (Sec 19)</h3>
+                        <p class="text-sm text-slate-600">If there is ever a legal dispute in the future, it must be handled in Delaware courts, and both parties waive the right to a jury trial.</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
-      </div>
+        <!-- Recommendation Section -->
+        <div class="bg-slate-50 p-6 md:p-8 border-t border-slate-200">
+            <div class="flex flex-col md:flex-row items-center justify-between bg-white p-6 rounded-xl border-2 border-emerald-100 shadow-sm gap-6">
+                <div class="flex items-center gap-4">
+                    <div class="p-3 bg-emerald-100 rounded-full text-emerald-600 shrink-0">
+                        <i data-lucide="check-circle" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-lg font-bold text-slate-800 mb-1">Final Legal Recommendation</h2>
+                        <p class="text-slate-600 text-sm">
+                            <strong>Clear to Sign.</strong> The hidden clauses have been audited and pose no unusual risk or financial burden to Procreate Fertility. Execute the settlement and process the $20,000 wire transfer to close this matter entirely.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-  );
-}
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
